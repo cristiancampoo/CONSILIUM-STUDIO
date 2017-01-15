@@ -1,0 +1,293 @@
+/*Aplicar un estilo a un elemento con un identificador único*/
+#header{
+
+	background: #ff2345;
+}
+
+#topNav{
+
+	background: #ff2345;
+	-webkit-border-radius: 10px; /* Chrome y Safari */
+	-moz-border-radius: 10px; /* Mozilla*/
+	-ms-border-radius: 10px; /* Internet Explorer*/
+	-o-border-radius: 10px; /* Opera */
+	border-radius: 10px;
+}
+
+/*Aplicar un estilo a un elemento determinado*/
+body{
+
+	background: #001234;
+}
+
+/*Aplicar un estilo a elementos que pertenecen a una misma clase */
+.articulos{
+
+}
+
+/*Aplicar un estilo a un elemento determinado que pertenece a una clase determinada*/
+p.parrafo{
+
+}
+
+/*Aplicar un estilo a un elemento determinado que es hijo de otro elemento*/
+div .nombre{
+
+}
+
+/*Aplicar el estilo a un elemento de esa clase que sea el primer hijo de otro elemento*/
+div>.nombre{
+
+}
+
+/*Aplicar un estilo a un elemento que va a continuación de otro*/
+h1+h2{
+
+}
+
+/*Aplicar un estilo a un elemento que utilice un determinado atributo*/
+p[atributo]{
+	
+}
+
+/*********************Pseudo-Clases**********************/
+
+/*Aplicar un estilo al primer elemento hijo de otro elemento*/
+li:first-child{
+
+}
+
+/*Aplicar un estilo al último elemento hijo de otro elemento*/
+li:last-child{
+
+}
+
+/*Aplicar un estilo al enésimo elemento hijo de otro elemento*/
+/*El argumento x puede ser una cifra, 2 por ejemplo*/
+/*El argumento x puede ser una palabra clave, even o odd*/
+/*El argumento x puede ser un cálculo matemático, n+3, -n+3, 3n, (3n+1)*/
+li:nth-child(x){
+
+}
+
+/*Aplicar un estilo al primer elemento de un tipo determinado*/
+li:first-of-type{
+
+}
+
+/*Aplicar un estilo al último elemento de un tipo determinado*/
+li:first-of-type{
+
+}
+
+/*Aplicar un estilo al enésimo elemento de un determinado tipo*/
+/*El argumento x puede ser una cifra, 2 por ejemplo*/
+/*El argumento x puede ser una palabra clave, even o odd*/
+/*El argumento x puede ser un cálculo matemático, n+3, -n+3, 3n, (3n+1)*/
+li:nth-of-type(x){
+
+}
+
+/*Aplicar estilos en función del estado de un vinculo (visitado y no visitado)*/
+a:visited{
+
+}
+
+a:link{
+
+}
+
+/*Aplicar estilos en elementos cuando se pasa el ratón por encima */
+a:hover{
+
+}
+
+/*Aplicar estilos en elementos cuando se hace click y desaparece rapidamente*/
+a:active{
+
+}
+
+/*Aplicar estilos en elementos cuando se hace click y no desaparece*/
+a:focus{
+
+}
+
+/*Aplicar estilo a la primera letra de un elemento*/
+p:first-letter{
+
+}
+
+/*Aplicar estilo a la primera linea de un elemento*/
+p:first-line{
+
+}
+
+/*Aplicar estilo a varios elementos a la vez -> agrupación de elementos*/
+p, h1, h2{
+
+}
+
+/*Aplicar un estilo a un elemento que va a continuación de otro, pero no necesariamente tiene que ir a continucacion,
+puede haber otros elementos entre medias */
+h1~h2{
+
+}
+
+/*Aplicar un estilo a un elemento que tenga un atributo que empiece por ese valor*/
+p[atributo^="valor"]{
+
+}
+
+/*Aplicar un estilo a un elemento que tenga un atributo que termine por ese valor*/
+p[atributo$="valor"]{
+
+}
+
+/*Aplicar un estilo a un elemento que tenga un atributo que contenga ese valor*/
+p[atributo*="valor"]{
+
+}
+
+/*Para ir a una determinada parte de una página se puede utilizar la nomenclatura
+<a href="#home">Home</a>. Para aplicarle un determinado estilo al elemento
+al que nos dirigimos a través del vínculo se utiliza :target, y de esta menera
+sabemos por las partes a las que nos hemos dirigido*/
+a:target{
+
+}
+
+/*Aplicar un estilo a un elemento que no tenga hermanos, es decir que sea el único hijo*/
+strong:only-child{
+
+}
+
+/*Aplicar un estilo a un elemento de un determinado tipo que no tenga hermanos, es decir puede haber varios hijos*/
+strong:only-of-type{
+
+}
+
+/*Aplicar un estilo a elementos vacíos, es decir, aquellos que no contienen otros elementos. Se suele utilizar
+en páginas dinámicas*/
+strong:empty{
+
+}
+
+/*Aplicar un estilo a excepción del elemento especificado*/
+p>:not(strong){
+
+}
+
+/*
+--margin: distancia entre el contenedor y el elemento padre;
+--padding: distancia entre el contenedor y sus hijos;
+--border: ancho de los bordes del contenedor;
+--width: el contenido (sin contar bordes ni padding);
+Existe una nueva funcionalidad en CSS3 para incluir en el width los bordes y el padding.
+Esta nueva funcionalidad es box-sizing y admite dos valores:
+-content-box
+-border-box-> el ancho de la caja contiene el border, contenido y padding;
+
+Respecto al desbordamiento, contamos con la funcionalidad de overflow, la cual
+se ha ampliado en CSS3 con overflow-x (para el desbordamiento horizontal) y
+overflow-y (para el desbordamiento vertical).
+
+Admite los siguientes valores:
+--visible: el contenido aparece siempre visible;
+--hidden: el contenido aparece siempre oculto;
+--scroll: Se puede acceder al contenido a través de un scroll; (se puede añadir la propiedad white-space: nowrap para ls visualización
+de la barra de desplazamiento)
+--auto: se puede acceder al contenido ;
+*/
+
+/*
+Respecto a los colores, se puede utilizar tanto el modo HSB como el RGB. Para utilizar la transparencia podemos utilizar
+las siguientes funciones:
+*/
+
+#rosa{
+	background-color: hsla(319,18%,86%,0.5);
+	background-color: rgba(200,20,10,0.5);
+}
+
+/*con la propiedad opacity también se puede aplicar transparencia a los elementos, pero a diferencia
+de lo anterior, se aplicará la transparencia tanto al elemento como a sus descendientes*/
+
+/*
+Respecto a las esquinas de los contenedores, se utiliza la propiedad border radius
+*/
+#esquinas{
+
+	border-radius: 10px; /*Se aplica a las 4 esquinas*/
+	border-radius: 10px 5px 30px 7px; /*Esquina superior izquierda, esquina superior derecha, esquina inferior derecha y esquina inferior izquierda*/
+	border-radius: 10px/5px; /* Aplicar una elipse como borde, radio horizontal y radio vertical, a todas las esquinas*/
+	border-radius: 10px 5px 30px 7px / 5px 30px 7px 13px; /*Primera secuencia radio horizontal y segunda radio vertical */
+}
+
+#sombras{
+	/* 
+	Los argumentos son:
+	-Distancia horizontal de la sombra;
+	-Distancia vertical de la sombra;
+	-Difuminado de la sombra;
+	-Valor de extensión de la sombra, es decir el punto medio en el que empieza a desvanecerse la sombra;
+	-Color de la sombra;
+	-Posición de la sombra, inset, hacia el interior, o outset(por defecto) hacia el exterior.
+	*/
+	box-shadow: 10px 15px 8px 2px rgb(12,34,56); /* Se pueden añadir varias sombras, separadas por coma */
+}
+
+#degradado-linear-mozilla{
+	/* El degradado comienza en la parte superior izquierda con un ángulo de 23 grados.
+	-- El primer color ocupa el 13% de la totalidad del degradado.
+	--El segundo color ocupa el 88% de la totalidad del degradado
+	--Se pueden aplicar más degradados*/
+	background: -moz-linear-gradient(top left -23 deg, rgb(17,34,20) 13%,rgb(12,34,56) 88%);
+}
+
+#degradado-radial-mozilla{
+	/* Se puede definir como ellipse o circle*/
+	background: -moz-radial-gradient(bottom right, ellipse, rgb(17,34,20) 13%,rgb(12,34,56) 88%);
+}
+
+#degradado-linear-webkit{
+
+	background: -webkit-gradient(linear, left top, right bottom),
+	color-stop(0%,rgb(17,34,20)), color-stop(100%,rgb(12,34,56));
+}
+
+#varios-fondos{
+	/*El orden en el que se especifican las imagenes es importante, la primera que se define se
+	superpondra sobre las demás  */
+	background: url("uno.png") top-left no-repeat,
+				url("dos.png") top-right no-repeat;
+}
+
+#posicion-inicial-imagen{
+	background: url("tigre.png") top-left no-repeat;
+	background-origin: padding-box; /*La imagen se situara en el limite del margen del contenedor */
+	background-origin: border-box; /*La imagen se situara en el limite del borde del contenedor */
+	background-origin: content-box; /*La imagen se situara en el limite del contenido del contenedor */
+}
+
+#recortar-imagen{
+	background: url("tigre.png") top-left no-repeat;
+	background-clip: padding-box; /*La imagen se situara en el limite del margen del contenedor */
+	background-clip: border-box; /*La imagen se situara en el limite del borde del contenedor */
+	background-clip: content-box; /*La imagen se situara en el limite del contenido del contenedor */
+}
+
+#tamaño-imagen{
+	background: url("tigre.png") top-left no-repeat;
+	background-size: 50%; /*La imagen se redimensionara el porcentaje especificado al contenedor */
+	background-size: 100px 50px; /*La imagen se redimensionara el tamaño especificado */
+	background-size: cover; /*La imagen se redimensionara proporcionalmente en un sentido (se corta la imagen)*/
+	background-size: contain; /*La imagen se redimensionara proporcionalmente en un sentido y no aparezca cortada*/
+}
+
+
+
+
+
+
+
+

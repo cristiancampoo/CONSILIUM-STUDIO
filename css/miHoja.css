@@ -1,0 +1,53 @@
+/*Aplicar un estilo a un elemento con un identificador único*/
+#header{
+
+	background: #ff2345;
+
+}
+
+#topNav{
+
+	background: #ff2345;
+	-webkit-border-radius: 10px; /* Chrome y Safari */
+	-moz-border-radius: 10px; /* Mozilla*/
+	-ms-border-radius: 10px; /* Internet Explorer*/
+	-o-border-radius: 10px; /* Opera */
+	border-radius: 10px;
+}
+
+#main{
+
+	background: #ff2345;
+}
+
+#footer{
+
+	background: #ff2345;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+
+}
+
+li{
+	display: inline;
+}
+
+a:hover{
+	background: #ffffff;
+}
+
+body{
+
+	background: #776655;
+}
+
+#wrapper{
+
+	background: #ffffff;
+}
+
+
+
+
